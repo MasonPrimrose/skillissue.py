@@ -1375,7 +1375,7 @@ class clss:
         self.spellmax = spellmax
 
 ##Normal Classes
-wizard = clss("wizard", diceroll(1, 4, 8), diceroll(1, 4, 8), diceroll(1, 4, 10), diceroll(1, 4, 16), diceroll(1, 4, 10), diceroll(1, 4, 10), 1, 1, 6, [quarterstaff, robe, slippers, mortonaloysiussaintclairjunior, magicmissile wagicwissile], [0, 0, 0, 0, 0, 0, 0, 1], [1, 2, 0, 1, 0, 0, 1, 3], [1, 0, 1, 0, 0, 0, 0], [3, 3, 3, 3, 1, 2, 3])
+wizard = clss("wizard", diceroll(1, 4, 8), diceroll(1, 4, 8), diceroll(1, 4, 10), diceroll(1, 4, 16), diceroll(1, 4, 10), diceroll(1, 4, 10), 1, 1, 6, [quarterstaff, robe, slippers, mortonaloysiussaintclairjunior, magicmissile, wagicwissile], [0, 0, 0, 0, 0, 0, 0, 1], [1, 2, 0, 1, 0, 0, 1, 3], [1, 0, 1, 0, 0, 0, 0], [3, 3, 3, 3, 1, 2, 3])
 while True:
     book = spellbooklist[random.randint(1, len(spellbooklist))-1]
     if book(0).level <= 3 and book not in wizard.startinventory:
